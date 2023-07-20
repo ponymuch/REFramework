@@ -1050,7 +1050,7 @@ void REFramework::update_fonts() {
     custom_icons.FontDataOwnedByAtlas = false;
     ImFont* fsload = (INVALID_FILE_ATTRIBUTES != ::GetFileAttributesA("reframework_pictographic.mode"))
         ? fonts->AddFontFromMemoryTTF((void*)af_baidu_ptr, af_baidu_size, (float)m_font_size, &custom_icons, fonts->GetGlyphRangesChineseFull())
-        : fonts->AddFontFromMemoryCompressedTTF(RobotoMedium_compressed_data, RobotoMedium_compressed_size, (float)m_font_size);
+        : fonts->AddFontFromMemoryCompressedTTF(RobotoMedium_compressed_data, RobotoMedium_compressed_size, (float)m_font_size, &custom_icons, fonts->GetGlyphRangesChineseFull());
 
     // https://fontawesome.com/
     custom_icons.PixelSnapH = true;
