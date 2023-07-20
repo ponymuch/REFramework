@@ -7,7 +7,7 @@ jobs:
     runs-on: windows-latest
     strategy:
       matrix:
-        target: [RE4]
+        target: [RE4, RE8]
     steps:
       - name: Checkout
         uses: actions/checkout@v3
